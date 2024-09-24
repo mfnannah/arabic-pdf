@@ -10,11 +10,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
+use Mfnannah\ArabicPdf\Commands\ArabicPdfCommand;
+use Mfnannah\ArabicPdf\Testing\TestsArabicPdf;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Mfnannah\ArabicPdf\Commands\ArabicPdfCommand;
-use Mfnannah\ArabicPdf\Testing\TestsArabicPdf;
 
 class ArabicPdfServiceProvider extends PackageServiceProvider
 {
@@ -102,7 +102,7 @@ class ArabicPdfServiceProvider extends PackageServiceProvider
         return [
             // AlpineComponent::make('arabic-pdf', __DIR__ . '/../resources/dist/components/arabic-pdf.js'),
             Css::make('arabic-pdf-styles', __DIR__ . '/../resources/dist/arabic-pdf.css'),
-            Js::make('arabic-pdf-scripts', __DIR__ . '/../resources/dist/arabic-pdf.js'),
+            //            Js::make('arabic-pdf-scripts', __DIR__ . '/../resources/dist/arabic-pdf.js'),
         ];
     }
 

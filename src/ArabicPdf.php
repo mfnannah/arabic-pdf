@@ -9,7 +9,9 @@ use Filament\Actions\Concerns\CanCustomizeProcess;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
-class ArabicPdf {
+
+class ArabicPdf extends Action
+{
     use CanCustomizeProcess;
 
     protected ?Closure $mutateRecordDataUsing = null;
