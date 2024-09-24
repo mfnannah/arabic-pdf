@@ -1,29 +1,29 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mfnannah/arabic-pdf",
+    "description": "This library supports Arabic language in PDF",
     "keywords": [
-        ":vendor_name",
+        "mfnannah",
         "laravel",
-        ":package_slug"
+        "arabic-pdf"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mfnannah/arabic-pdf",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/mfnannah/arabic-pdf/issues",
+        "source": "https://github.com/mfnannah/arabic-pdf"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Mohammed Ali",
+            "email": "mafnannah@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
+        "ar-php/ar-php": "^1.0",
+        "dompdf/dompdf": "^3.0",
         "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
@@ -41,13 +41,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Mfnannah\\ArabicPdf\\": "src/",
+            "Mfnannah\\ArabicPdf\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Mfnannah\\ArabicPdf\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Mfnannah\\ArabicPdf\\ArabicPdfServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "ArabicPdf": "Mfnannah\\ArabicPdf\\Facades\\ArabicPdf"
             }
         }
     },
