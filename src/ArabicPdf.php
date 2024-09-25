@@ -27,7 +27,7 @@ class ArabicPdf extends Action
 
         $this->label('PDF');
 
-        $this->modalHeading(fn (): string => 'PDF');
+        $this->modal(false);
 
         $this->successNotificationTitle(__('filament-actions::edit.single.notifications.saved.title'));
 
@@ -36,11 +36,12 @@ class ArabicPdf extends Action
         $this->action(function (): void {
             $this->process(function (array $data, Model $record, Table $table) {
                 $arabic = new Glyphs;
+                $record['title'] = 'محمد علي فنانه';
                 $data = [
                     'record' => $record,
                     'arabic' => $arabic,
                 ];
-                $html = view('templates.pdf', $data)->render();
+                $html = view('arabic-pdf::templates.pdf', $data)->render();
                 $dompdf = new Dompdf;
                 $dompdf->loadHtml($html);
                 $dompdf->setPaper('A4', 'portrait');
