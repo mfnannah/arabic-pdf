@@ -73,5 +73,7 @@
                 "ArabicPdf": "Mfnannah\\ArabicPdf\\Facades\\ArabicPdf"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
