@@ -1,5 +1,6 @@
 {
     "name": "mfnannah/arabic-pdf",
+    "version": "1.0.0",
     "description": "This library supports Arabic language in PDF",
     "keywords": [
         "mfnannah",
@@ -73,7 +74,5 @@
                 "ArabicPdf": "Mfnannah\\ArabicPdf\\Facades\\ArabicPdf"
             }
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
